@@ -1,0 +1,1 @@
+Permet d'envoyer à nouveau une photo sur l'écran d'administration de la photo, sans perdre les informations associées
