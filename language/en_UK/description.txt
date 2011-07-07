@@ -1,0 +1,1 @@
+Ability to update a photo (the JPEG/PNG file) from its administration screen, without losing any related data (user comments, number of visits...)
