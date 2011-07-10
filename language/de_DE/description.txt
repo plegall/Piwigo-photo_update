@@ -1,0 +1,1 @@
+Die Möglichkeit,  ein Foto (JPEG / PNG-Datei) von der Administrationsoberfläche heraus zu aktualisieren ohne alle damit verbundenen Daten (User-Kommentare, Anzahl der Besuche ...) zu verlieren
