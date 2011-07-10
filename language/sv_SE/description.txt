@@ -1,0 +1,1 @@
+Möjlighet att uppdatera ett foto (JPEG/PNG fil) från administrationsskärmen, utan att förlora relevanta data (kommentarer, antal besök...)
