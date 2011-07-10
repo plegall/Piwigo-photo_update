@@ -1,0 +1,1 @@
+Mogelijkheid om een foto (het JPEG / PNG-bestand) vanuit het administratie-scherm bij te werken, zonder verlies van gerelateerde gegevens (commentaar van gebruikers, aantal bezoeken, ...)
