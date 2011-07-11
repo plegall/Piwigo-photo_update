@@ -1,0 +1,1 @@
+Iespēja atjaunināt foto ( JPEG/PNG fails) no administrēšanas ekrāna, nezaudējot saistītos datus (lietotāja komentāri, apmeklējumu skaits...)
