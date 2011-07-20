@@ -1,0 +1,1 @@
+ Umožňuje aktualizovat fotografii (JPEG/PNG soubor) z její administrační stránky bez ztráty souvisejících dat (uživatelské komentáře, počet návštěv...)
