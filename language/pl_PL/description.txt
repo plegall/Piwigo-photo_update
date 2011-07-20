@@ -1,0 +1,1 @@
+Możliwość aktualizowania zdjęcia (plik JPEG/PNG) z panelu administratora, bez tracenia danych (komentarzy użytkowników, liczby wizyt...)
