@@ -1,0 +1,1 @@
+Schopnosť aktualizovať fotku (JPEG/PNG súbor) z tojto administrátorovej obrazovky bez straty relevantných údajov (používateľské komentáre, počet videní...)
