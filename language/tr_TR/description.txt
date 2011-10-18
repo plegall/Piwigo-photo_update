@@ -1,0 +1,1 @@
+Admin sayfasından bir resmi güncelleme yetkisi, yorum ve ziyaret  gibi bilgileri kaybetmeden
