@@ -1,0 +1,1 @@
+Permette di aggiornare una foto (JPEG / PNG) dalla schermata di amministrazione, senza perdere i dati relativi (commenti degli utenti, numero di visite...)
