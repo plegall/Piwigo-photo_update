@@ -1,0 +1,1 @@
+Abilitatea de a actualiza o fotografie (JPEG / PNG) de la ecranul de administrarea acestuia, fără a pierde  date (user, comentariile utilizatorilor, numărul de vizite ...)
