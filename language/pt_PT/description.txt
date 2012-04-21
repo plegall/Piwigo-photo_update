@@ -1,0 +1,1 @@
+Facilidade de atualiza&ccedil;&atilde;o de uma foto (arquivo JPEG / PNG) pela administra&ccedil;&atilde;o, sem perder quaisquer dados relacionados com a mesma (Coment&aacute;rios de usu&aacute;rios, n&uacute;mero de visitas ...)
