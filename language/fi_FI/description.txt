@@ -1,0 +1,1 @@
+Mahdollisuus päivittää kuva (JPEG/PNG tiedosto) valvojan näytöllä menettämättä liitettyjä tietoja (käyttäjien kommentit, vierailujen määrät, jne...)
