@@ -1,0 +1,1 @@
+Posibilidad de actualizar una foto (en formato  JPEG/PNG) desde la pantalla de administraci&oacute;n, y sin perder ninguna informaci&oacute;n de la misma (como visitas, comentarios, puntuaci&oacute;n, etc)
