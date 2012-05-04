@@ -1,0 +1,1 @@
+Permet actualitzar una imatge (arxius JPEG/PNG) sense perdre les seves dades relacionades (comentaris dels usuaris, nombre de visites...)
