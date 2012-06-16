@@ -1,1 +1,1 @@
-Admin sayfasından bir resmi güncelleme yetkisi, yorum ve ziyaret  gibi bilgileri kaybetmeden
+Yönetim sayfasından bir fotoğrafı (JPEG/PNG dosyası) ilgili verileri (kullanıcı yorumları, ziyaret sayısı...) kaybetmeden güncelleme yetkisi

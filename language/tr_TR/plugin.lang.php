@@ -1,5 +1,5 @@
 <?php
-$lang['The photo was updated'] = 'Bu resim güncellendi';
-$lang['Photo Update'] = 'Resim güncelle';
+$lang['The photo was updated'] = 'Fotoğraf güncellendi';
+$lang['Photo Update'] = 'Fotoğraf Güncelleme';
 $lang['Update'] = 'Güncelle';
 ?>
