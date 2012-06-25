@@ -1,0 +1,1 @@
+Evnen til at opdatere et billede (JPEG / PNG-fil) fra dets administration skærm, uden at miste data (brugerens kommentarer, antal besøg ...)
