@@ -1,0 +1,1 @@
+Muligheten til å oppdatere bilder (JPEG/PNG filen) fra administrasjonsiden, uten tap av relatert data (bruker, kommentarer, antall besøk...)
