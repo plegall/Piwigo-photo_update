@@ -1,0 +1,1 @@
+Habilita atualizar uma foto (arquivo JPG/PNG) da sua tela adminstrativa sem perder qualquer dado relacionado (comentario de usuário, número de visitas...)
