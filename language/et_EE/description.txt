@@ -1,0 +1,2 @@
+Võimekus uuendada pilti (JPEG/PNG failiformaat) administratiivlehelt kaotamata olulist informatsiooni (kasutaja kommentaarid, külastuste arvu...)
+
