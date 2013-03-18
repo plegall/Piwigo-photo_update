@@ -20,7 +20,7 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
-$lang['Photo Update'] = 'Naloži sliko';
-$lang['The photo was updated'] = 'Slika je bila naložena';
+$lang['Photo Update'] = 'Posodobi sliko';
+$lang['The photo was updated'] = 'Slika je bila posodobljena';
 $lang['Update'] = 'Posodobi';
 ?>
