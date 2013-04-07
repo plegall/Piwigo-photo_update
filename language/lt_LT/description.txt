@@ -1,0 +1,1 @@
+Galimybė atnaujinti nuotrauką (JPEG/PNG failą) iš jų valdymo puslapio, neprarandant susijusių duomenų (komentarų, peržiūrų skaičiaus ir t.t.).
