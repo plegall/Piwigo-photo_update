@@ -21,6 +21,6 @@
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
 $lang['Photo Update'] = 'Fotoopdatering';
-$lang['The photo was updated'] = 'Fotoet er opdateret';
-$lang['Update'] = 'Opdatering';
+$lang['The photo was updated'] = 'Fotografiet er opdateret';
+$lang['Update'] = 'Opdater';
 ?>
