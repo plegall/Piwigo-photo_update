@@ -23,4 +23,7 @@
 $lang['Photo Update'] = 'Foto uuendus';
 $lang['The photo was updated'] = 'Foto on uuendatud';
 $lang['Update'] = 'Uuenda';
+$lang['File to update'] = 'Uuendatav fail';
+$lang['main file'] = 'peamine fail';
+$lang['representative picture'] = 'esindaja pilt';
 ?>
