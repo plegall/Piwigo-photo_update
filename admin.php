@@ -68,20 +68,84 @@ if (isset($_FILES['photo_update']))
   }
   else
   {
-    add_uploaded_file(
-      $_FILES['photo_update']['tmp_name'],
-      $_FILES['photo_update']['name'],
-      null,
-      null,
-      $_GET['image_id']
-      );
+    $file_to_update = 'main';
+    if (isset($_POST['file_to_update']) and in_array($_POST['file_to_update'], array('main', 'representative')))
+    {
+      $file_to_update = $_POST['file_to_update'];
+    }
 
-    $page['photo_update_refresh_thumbnail'] = true;
+    $image_id = $_GET['image_id'];
+      
+    $query = '
+SELECT
+    id, path, representative_ext
+  FROM '.IMAGES_TABLE.'
+  WHERE id = '.$image_id.'
+;';
+    $result = pwg_query($query);
+    $row = pwg_db_fetch_assoc($result);
 
-    array_push(
-      $page['infos'],
-      l10n('The photo was updated')
-      );
+    if ('main' == $file_to_update)
+    {
+      add_uploaded_file(
+        $_FILES['photo_update']['tmp_name'],
+        $_FILES['photo_update']['name'],
+        null,
+        null,
+        $_GET['image_id']
+        );
+      
+      array_push(
+        $page['infos'],
+        l10n('The photo was updated')
+        );
+    }
+    
+    if ('representative' == $file_to_update)
+    {
+      $file_path = $row['path'];
+
+      // move the uploaded file to pwg_representative sub-directory
+      $representative_file_path = dirname($file_path).'/pwg_representative/';      
+      $representative_file_path.= get_filename_wo_extension(basename($file_path)).'.';
+
+      $old_representative_file_path = $representative_file_path.$row['representative_ext'];
+
+      $representative_ext = get_extension($_FILES['photo_update']['name']);
+
+      // in case we replace a *.jpg by *.png we have to safely remove the
+      // *.jpg becase move_uploaded_file won't remove it
+      if ($representative_ext != $row['representative_ext'])
+      {
+        @unlink($representative_file_path.$row['representative_ext']);
+      }
+      
+      $representative_file_path.= $representative_ext;
+
+      prepare_directory(dirname($representative_file_path));
+
+      move_uploaded_file($_FILES['photo_update']['tmp_name'], $representative_file_path);
+
+      $file_infos = pwg_image_infos($representative_file_path);
+      
+      single_update(
+        IMAGES_TABLE,
+        array(
+          'representative_ext' => $representative_ext,
+          'width' => $file_infos['width'],
+          'height' => $file_infos['height'],
+          ),
+        array('id' => $image_id)
+        );
+      
+      array_push(
+        $page['infos'],
+        l10n('The representative picture was updated')
+        );
+    }
+
+    // force refresh of multiple sizes
+    delete_element_derivatives($row);
   }
 }
 
@@ -116,9 +180,15 @@ SELECT *
 ;';
 $row = pwg_db_fetch_assoc(pwg_query($query));
 
+if (!in_array(get_extension($row['path']), $conf['picture_ext']) or !empty($row['representative_ext']))
+{
+  $template->assign('show_file_to_update', true);
+}
+
 $template->assign(
   array(
-    'TN_SRC' => DerivativeImage::thumb_url($row).(isset($_FILES['photo_update']) ? '?'.time() : ''),
+    'TN_SRC' => DerivativeImage::thumb_url($row),
+    'original_filename' => $row['file'],
     'TITLE' => render_element_name($row),
     )
   );
