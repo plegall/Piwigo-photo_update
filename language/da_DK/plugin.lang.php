@@ -23,4 +23,7 @@
 $lang['Photo Update'] = 'Fotoopdatering';
 $lang['The photo was updated'] = 'Fotografiet er opdateret';
 $lang['Update'] = 'Opdater';
+$lang['File to update'] = 'Fil der skal opdateres';
+$lang['main file'] = 'primær fil';
+$lang['representative picture'] = 'miniaturebillede';
 ?>
