@@ -51,8 +51,6 @@ $admin_photo_base_url = get_root_url().'admin.php?page=photo-'.$_GET['image_id']
 // | Process form                                                          |
 // +-----------------------------------------------------------------------+
 
-load_language('plugin.lang', PHPWG_PLUGINS_PATH.basename(dirname(__FILE__)).'/');
-  
 if (isset($_FILES['photo_update']))
 {
   include_once(PHPWG_ROOT_PATH.'admin/include/functions_upload.inc.php');

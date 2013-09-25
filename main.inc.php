@@ -16,6 +16,8 @@ if (!defined('PHPWG_ROOT_PATH'))
 add_event_handler('tabsheet_before_select','photo_update_add_tab', 50, 2);
 function photo_update_add_tab($sheets, $id)
 {  
+  load_language('plugin.lang', PHPWG_PLUGINS_PATH.basename(dirname(__FILE__)).'/');
+  
   if ($id == 'photo')
   {
     $sheets['update'] = array(
