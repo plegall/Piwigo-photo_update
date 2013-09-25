@@ -23,4 +23,7 @@
 $lang['Photo Update'] = 'Ενημέρωση φωτογραφίας';
 $lang['The photo was updated'] = 'Η φωτογραφία ενημερώθηκε';
 $lang['Update'] = 'Ενημέρωση';
+$lang['representative picture'] = 'αντιπροσωπευτική φωτογραφία';
+$lang['main file'] = 'κυρίως αρχείο';
+$lang['File to update'] = 'Αρχείο για ενημέρωση';
 ?>
