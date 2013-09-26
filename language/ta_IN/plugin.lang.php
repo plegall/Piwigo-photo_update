@@ -23,4 +23,7 @@
 $lang['Photo Update'] = 'புகைப்படம் புதுப்பிப்பு';
 $lang['The photo was updated'] = 'புகைப்படம் புதுப்பிக்கப்பட்டது';
 $lang['Update'] = 'புதுப்பிக்க';
+$lang['File to update'] = 'புதுப்பிக்க கோப்பு';
+$lang['main file'] = 'முக்கிய கோப்பு';
+$lang['representative picture'] = 'பிரதிநிதி படம்';
 ?>
