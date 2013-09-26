@@ -23,4 +23,7 @@
 $lang['Photo Update'] = 'Actualizar foto';
 $lang['The photo was updated'] = 'A foto foi actualizada';
 $lang['Update'] = 'Actualizar';
+$lang['File to update'] = 'Arquivo para atualizar';
+$lang['main file'] = 'Arquivo principal';
+$lang['representative picture'] = 'Foto representativa';
 ?>
