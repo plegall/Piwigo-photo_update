@@ -23,4 +23,7 @@
 $lang['Photo Update'] = 'Оновлення зображення';
 $lang['The photo was updated'] = 'Зображення було оновлено';
 $lang['Update'] = 'Оновити';
+$lang['representative picture'] = 'зображення-представник';
+$lang['File to update'] = 'Файл для оновлення';
+$lang['main file'] = 'основний файл';
 ?>
