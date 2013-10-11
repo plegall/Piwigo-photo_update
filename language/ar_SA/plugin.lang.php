@@ -23,4 +23,7 @@
 $lang['Photo Update'] = 'تحديث الصورة';
 $lang['The photo was updated'] = 'تم تحديث الصور';
 $lang['Update'] = 'تحديث';
+$lang['File to update'] = 'ملف للتحديث';
+$lang['main file'] = 'الملف الرئيس';
+$lang['representative picture'] = 'الصورة النموذجية';
 ?>
