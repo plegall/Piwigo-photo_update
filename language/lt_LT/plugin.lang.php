@@ -23,4 +23,7 @@
 $lang['Photo Update'] = 'Nuotraukos atnaujinimas';
 $lang['The photo was updated'] = 'Nuotrauka buvo atnaujinta';
 $lang['Update'] = 'Atnaujinti';
+$lang['File to update'] = 'Failas, kurį atnaujinsite';
+$lang['main file'] = 'pagrindinis failas';
+$lang['representative picture'] = 'atvaizduojantis paveiksliukas';
 ?>
