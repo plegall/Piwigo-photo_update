@@ -23,4 +23,7 @@
 $lang['Photo Update'] = 'Photo Update';
 $lang['The photo was updated'] = 'La imatge ha estat actualitzat';
 $lang['Update'] = 'Actualitzar';
+$lang['File to update'] = 'Fitxer per pujar';
+$lang['main file'] = 'fitxer principal';
+$lang['representative picture'] = 'imatge representativa';
 ?>
