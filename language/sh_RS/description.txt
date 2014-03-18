@@ -1,0 +1,1 @@
+Omogućava da promenite fotografiju (JPEG/PNG datoteku) iz administracije, bez gubljenja odgovarajućih podataka (komentara korisnika, broja poseta,...)
