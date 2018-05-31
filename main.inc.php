@@ -5,7 +5,7 @@ Version: auto
 Description: Update a photo with a new file
 Plugin URI: http://piwigo.org/ext/extension_view.php?eid=
 Author: plg
-Author URI: http://piwigo.wordpress.com
+Author URI: http://le-gall.net/pierrick
 */
 
 if (!defined('PHPWG_ROOT_PATH'))
@@ -13,11 +13,26 @@ if (!defined('PHPWG_ROOT_PATH'))
   die('Hacking attempt!');
 }
 
+// +-----------------------------------------------------------------------+
+// | Define plugin constants                                               |
+// +-----------------------------------------------------------------------+
+
+define('PHOTO_UPDATE_ID', basename(dirname(__FILE__)));
+define('PHOTO_UPDATE_PATH', PHPWG_PLUGINS_PATH . PHOTO_UPDATE_ID . '/');
+
+// +-----------------------------------------------------------------------+
+// | Add event handlers                                                    |
+// +-----------------------------------------------------------------------+
+
+add_event_handler('init', 'photo_update_init');
+function photo_update_init()
+{
+  load_language('plugin.lang', PHOTO_UPDATE_PATH);
+}
+
 add_event_handler('tabsheet_before_select','photo_update_add_tab', 50, 2);
 function photo_update_add_tab($sheets, $id)
 {  
-  load_language('plugin.lang', PHPWG_PLUGINS_PATH.basename(dirname(__FILE__)).'/');
-  
   if ($id == 'photo')
   {
     $sheets['update'] = array(
