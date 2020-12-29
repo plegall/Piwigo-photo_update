@@ -193,6 +193,7 @@ $template->assign(
     'TN_SRC' => $tn_src,
     'original_filename' => $row['file'],
     'TITLE' => render_element_name($row),
+    'ADMIN_PAGE_TITLE' => l10n('Edit photo #%s', $_GET['image_id']),
     )
   );
 

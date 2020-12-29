@@ -1,5 +1,3 @@
-<h2>{$TITLE} &#8250; {'Edit photo'|@translate} {$TABSHEET_TITLE}</h2>
-
 <fieldset>
   <legend>{'Photo Update'|@translate}</legend>
   <table>
