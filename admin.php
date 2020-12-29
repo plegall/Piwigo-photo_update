@@ -183,9 +183,14 @@ if (!in_array(get_extension($row['path']), $conf['picture_ext']) or !empty($row[
   $template->assign('show_file_to_update', true);
 }
 
+$tn_src = DerivativeImage::thumb_url($row);
+// force web browser to avoid its cache by adding a random string at the end of the thumbnail URL
+$tn_src.= preg_match('/\?/', $tn_src) ? '&' : '?';
+$tn_src.= generate_key(10);
+
 $template->assign(
   array(
-    'TN_SRC' => DerivativeImage::thumb_url($row),
+    'TN_SRC' => $tn_src,
     'original_filename' => $row['file'],
     'TITLE' => render_element_name($row),
     )
