@@ -1,0 +1,1 @@
+Möguleiki á að uppfæra mynd (JPEG/PNG skrána) af stjórnunarskjánum, án þess að tapa neinum tengdum gögnum (umsagnir notenda, fjöldi heimsókna...)
