@@ -188,14 +188,12 @@ $tn_src = DerivativeImage::thumb_url($row);
 $tn_src.= preg_match('/\?/', $tn_src) ? '&' : '?';
 $tn_src.= generate_key(10);
 
-$extTab = explode('.',$row['file']);
 $template->assign(
   array(
     'TN_SRC' => $tn_src,
     'original_filename' => $row['file'],
     'TITLE' => render_element_name($row),
     'ADMIN_PAGE_TITLE' => l10n('Edit photo #%s', $_GET['image_id']),
-    'is_svg'=> (strtoupper(end($extTab)) == 'SVG'),
     )
   );
 
