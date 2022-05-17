@@ -11,7 +11,9 @@
           <p style="text-align:left; margin-top:0;">
             <strong>{'File to update'|@translate}</strong><br>
             <label><input type="radio" name="file_to_update" value="main"> {'main file'|@translate} ({$original_filename})</label>
+            {if !$is_svg}
             <label><input type="radio" name="file_to_update" value="representative" checked="checked"> {'representative picture'|@translate}</label>
+            {/if}
           </p>
 {/if}
           <p style="text-align:left; margin-top:0;">
