@@ -6,6 +6,7 @@ Description: Update a photo with a new file
 Plugin URI: http://piwigo.org/ext/extension_view.php?eid=
 Author: plg
 Author URI: http://le-gall.net/pierrick
+Has Settings: false
 */
 
 if (!defined('PHPWG_ROOT_PATH'))
