@@ -3,7 +3,7 @@
   <table>
     <tr>
       <td id="albumThumbnail" style="vertical-align:top">
-        <img src="{$TN_SRC}" alt="{'Thumbnail'|@translate}" class="Thumbnail">
+        <img src="{$TN_SRC}?{$random_avoid_cache_key}" alt="{'Thumbnail'|@translate}" class="Thumbnail">
       </td>
       <td style="vertical-align:top">
         <form id="photo_update" method="post" action="" enctype="multipart/form-data">

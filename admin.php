@@ -73,15 +73,10 @@ if (isset($_FILES['photo_update']))
     }
 
     $image_id = $_GET['image_id'];
-      
-    $query = '
-SELECT
-    id, path, representative_ext
-  FROM '.IMAGES_TABLE.'
-  WHERE id = '.$image_id.'
-;';
-    $result = pwg_query($query);
-    $row = pwg_db_fetch_assoc($result);
+
+    $row = get_image_infos($image_id, true);
+
+    $activity_details = array('action' => 'photo_update', 'file_to_update' => $file_to_update);
 
     if ('main' == $file_to_update)
     {
@@ -97,6 +92,19 @@ SELECT
         $page['infos'],
         l10n('The photo was updated')
         );
+
+      if (array_key_exists('md5sum_fs', $row))
+      {
+        $image = get_image_infos($_GET['image_id'], true);
+
+        if ($image['md5sum'] != $image['md5sum_fs'])
+        {
+          $activity_details['md5sum_fs_previous'] = $image['md5sum_fs'];
+          $activity_details['md5sum_fs_new'] = $image['md5sum'];
+
+          single_update(IMAGES_TABLE, array('md5sum_fs' => $image['md5sum']), array('id' => $image['id']));
+        }
+      }
     }
     
     if ('representative' == $file_to_update)
@@ -141,6 +149,8 @@ SELECT
         l10n('The representative picture was updated')
         );
     }
+
+    pwg_activity('photo', $image_id, 'edit', $activity_details);
 
     // force refresh of multiple sizes
     delete_element_derivatives($row);
@@ -194,6 +204,7 @@ $template->assign(
     'original_filename' => $row['file'],
     'TITLE' => render_element_name($row),
     'ADMIN_PAGE_TITLE' => l10n('Edit photo #%s', $_GET['image_id']),
+    'random_avoid_cache_key' => generate_key(10),
     )
   );
 
